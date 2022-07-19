@@ -26,8 +26,8 @@ class Planning(models.Model):
 
 class Forfait(models.Model):
     student = models.ForeignKey(User,related_name='student_forfait' ,on_delete=models.CASCADE)
-    heur_payer = models.CharField(max_length=42)
-    total_heur= models.CharField(max_length=42)
+    heures_payées = models.CharField(max_length=42)
+    total_heures= models.CharField(max_length=42)
 
 
     def __str__(self):

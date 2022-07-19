@@ -1,22 +1,22 @@
 <!-- templates/planning.html -->
-<h2>{{ user.username }}</h2>
-<p>first name: {{ user.first_name }}</p>
-<p>laste name: {{ user.last_name }}</p>
-<p>email: {{ user.email }}</p>
+<h2> Bonjour {{ user.username }} !</h2>
+<p>First name: {{ user.first_name }}</p>
+<p>Last name: {{ user.last_name }}</p>
+<p>Email: {{ user.email }}</p>
 
 
   {% for forfait in forfaits %}
-  <p>Heure payer: {{ forfait.heur_payer }}</p>
-  <p>Totale d'heur faite: {{ forfait.total_heur }}</p>
+  <p>Heure payées: {{ forfait.heures_payées }}</p>
+  <p>Totals d'heures faites: {{ forfait.total_heures }}</p>
   {% endfor %}
 
 {% if plannings_student %}
   {% for planning_student in plannings_student %}
     <ul>
       <li>Instructeur: {{ planning_student.instructor }}</li>
-      <li>Lieux: {{ planning_student.location }}</li>
-      <li>heure: {{ planning_student.hour }}</li>
-      <li>date: {{ planning_student.date }}</li>
+      <li>Lieu: {{ planning_student.location }}</li>
+      <li>Heure: {{ planning_student.hour }}</li>
+      <li>Date: {{ planning_student.date }}</li>
     </ul>
   {% endfor %}
 {% endif %}
@@ -24,9 +24,9 @@
   {% for planning_instructor in plannings_instructor %}
     <ul>
       <li>Student: {{ planning_instructor.student }}</li>
-      <li>Lieux: {{ planning_instructor.location }}</li>
-      <li>heure: {{ planning_instructor.hour }}</li>
-      <li>date: {{ planning_instructor.date }}</li>
+      <li>Lieu: {{ planning_instructor.location }}</li>
+      <li>Heure: {{ planning_instructor.hour }}</li>
+      <li>Date: {{ planning_instructor.date }}</li>
     </ul>
   {% endfor %}
 {% endif %}
