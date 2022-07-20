@@ -8,14 +8,11 @@
   <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
   {% load static %}
   <link rel="stylesheet" href="{% static 'planning/reset.css' %}">
-  <link rel="stylesheet" href="{% static 'planning/base.css' %}">
+  <link rel="stylesheet" href="{% static 'planning/basic.css' %}">
 </head>
 <body>
   <div class="title">
-    <h1>My driving school</h1>
-    {% if user.groups.first.name == 'Admin'  %}
-      <h1>coucou</h1>
-    {% endif %}
+    <h1>My Driving School </h1>
   </div>
   <div class="content">
     <div class="card">

@@ -5,12 +5,14 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  <p><a href="{% url 'logout' %}">logout</a></p>
-  <p><a href="{% url 'planning' %}">Planning</a></p>
+  Salut {{ user.username }}!
+  <br> <br> <br> <br>
+  <p><a href="{% url 'planning' %}" style="text-decoration: none; box-shadow: none; color: rgb(255, 255, 255);"> -> Ton planning</a></p>
+  <br> <br>
+  <p><a href="{% url 'logout' %}" style="text-decoration: none; box-shadow: none; color: rgb(255, 255, 255);"> -> Déconnexion</a></p>
 
-{% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a>
+{% else %}  
+  <p>Oops ! Tu n'es pas connecté</p>
+  <a href="{% url 'login' %}">Connexion</a>
 {% endif %}
 {% endblock %}

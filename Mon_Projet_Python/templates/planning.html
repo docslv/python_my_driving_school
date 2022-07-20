@@ -1,5 +1,6 @@
 <!-- templates/planning.html -->
-<h2> Bonjour {{ user.username }} !</h2>
+<body style="background-color: beige;">
+<h2 style="text-align: center; font-size: 40px;"> {{ user.username }}</h2>
 <p>First name: {{ user.first_name }}</p>
 <p>Last name: {{ user.last_name }}</p>
 <p>Email: {{ user.email }}</p>
@@ -23,6 +24,7 @@
 {% if plannings_instructor %}
   {% for planning_instructor in plannings_instructor %}
     <ul>
+      br><br>
       <li>Student: {{ planning_instructor.student }}</li>
       <li>Lieu: {{ planning_instructor.location }}</li>
       <li>Heure: {{ planning_instructor.hour }}</li>
@@ -30,3 +32,4 @@
     </ul>
   {% endfor %}
 {% endif %}
+</body>

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&family=Montserrat&family=Pacifico&display=swap');
+
+
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 33px;
+}
+
+.title {
+    padding: 50px;
+    background:grey;
+    text-align: center;
+    font-family: 'Fira Sans',
+    sans-serif;
+    font-weight: bold;
+}
+
+.content {
+    margin: auto;
+    margin-top: auto;
+    width: 700px;
+    text-align: center;
+    margin-top: 100px;
+    height: 300px;
+    display: flex;
+    background-color: wheat;
+}
+
+.card {
+    margin: auto;
+}
